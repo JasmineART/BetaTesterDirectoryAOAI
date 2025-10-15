@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OA AI Tracker: Beta Documentation & Resources</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom styles for a clean documentation feel */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb; /* Light background */
+            color: #1f2937; /* Dark text */
+        }
+        .doc-section {
+            background-color: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+            margin-bottom: 2rem;
+            border-left: 4px solid #10b981; /* Accent color */
+        }
+        .header-bg {
+            background-color: #1f2937;
+            color: white;
+        }
+        /* Mobile-friendly table styling */
+        .responsive-table th, .responsive-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        @media (max-width: 768px) {
+            .doc-section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Header -->
+    <header class="header-bg p-6 shadow-xl">
+        <div class="max-w-4xl mx-auto flex items-center justify-between">
+            <h1 class="text-3xl font-extrabold tracking-tight">
+                OA AI Tracker <span class="text-green-400 font-normal text-xl">Beta Docs</span>
+            </h1>
+            <a href="https://jasmineart.github.io/AO-AI-Tracking.io/" target="_blank" class="text-green-400 hover:text-green-200 transition-colors text-sm font-medium flex items-center space-x-1">
+                <i data-lucide="external-link" class="w-4 h-4"></i>
+                <span>Go to App</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-4xl mx-auto p-4 md:p-8">
+
+        <!-- Quick Links Section -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">Quick Links & Resources</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="https://jasmineart.github.io/AO-AI-Tracking.io/" target="_blank" class="flex flex-col items-center justify-center p-6 bg-blue-600 text-white rounded-xl shadow-lg hover:bg-blue-700 transition transform hover:scale-[1.02]">
+                    <i data-lucide="layout-dashboard" class="w-6 h-6 mb-2"></i>
+                    <span class="font-medium">Live Application</span>
+                    <small class="text-xs opacity-80">(Testing Site)</small>
+                </a>
+                <a href="https://github.com/JasmineART/AO-AI-Tracking.io" target="_blank" class="flex flex-col items-center justify-center p-6 bg-gray-800 text-white rounded-xl shadow-lg hover:bg-gray-900 transition transform hover:scale-[1.02]">
+                    <i data-lucide="github" class="w-6 h-6 mb-2"></i>
+                    <span class="font-medium">GitHub Repository</span>
+                    <small class="text-xs opacity-80">(Source Code)</small>
+                </a>
+                <a href="https://discord.gg/2cVQAkK4xW" target="_blank" class="flex flex-col items-center justify-center p-6 bg-indigo-600 text-white rounded-xl shadow-lg hover:bg-indigo-700 transition transform hover:scale-[1.02]">
+                    <i data-lucide="message-circle" class="w-6 h-6 mb-2"></i>
+                    <span class="font-medium">Join Discord</span>
+                    <small class="text-xs opacity-80">(Direct Feedback)</small>
+                </a>
+            </div>
+        </div>
+
+        <!-- Beta Test Instructions Section -->
+        <div class="doc-section">
+            <h2 class="text-3xl font-bold mb-4 border-b pb-2 text-gray-800">Beta Test Instructions</h2>
+            <p class="mb-6 text-gray-600">
+                Thank you for testing the **OA AI Tracker**. Your feedback is crucial for validating the user experience, authentication, and the core data processing workflow.
+            </p>
+
+            <!-- 1. Access and Login -->
+            <h3 class="text-2xl font-semibold mt-6 mb-3 text-gray-700 flex items-center space-x-2">
+                <i data-lucide="log-in" class="w-5 h-5 text-green-600"></i>
+                <span>1. Access and Login</span>
+            </h3>
+            <ul class="list-disc pl-5 space-y-2 text-gray-600 mb-4">
+                <li>**Testing Environments:** Please test on a modern **desktop** browser AND a **mobile device** (iOS/Android). Note any differences in layout or functionality.</li>
+                <li>**Authentication:** Locate and use the **Google Login** feature to sign in.</li>
+                <li>**Accessible Login Check:** Verify the usability of the login features, especially regarding assistive technologies (screen readers, keyboard navigation). Report any accessibility issues immediately.</li>
+            </ul>
+
+            <!-- 2. Workflow & Data Import -->
+            <h3 class="text-2xl font-semibold mt-6 mb-3 text-gray-700 flex items-center space-x-2">
+                <i data-lucide="file-check" class="w-5 h-5 text-green-600"></i>
+                <span>2. Workflow & Data Import</span>
+            </h3>
+            <ol class="list-decimal pl-5 space-y-3 text-gray-600">
+                <li>**Create a New Project:** After signing in, navigate to the **Projects** section/tab. Locate and click the button to **Add a New AI Project** (or similar naming). Fill in any required project details.</li>
+                <li>**Data Connection and Upload:** Within the new project, navigate to the data upload area. Select the provided Google Sheets file (or a file of a different type) to import the data.
+                    <ul class="list-circle pl-5 mt-1 text-sm italic">
+                        <li>**Check File Types:** Specifically verify that importing the native **Google Sheets file type** works correctly.</li>
+                        <li>**Explore Connections:** If available, check other data connection features as desired (e.g., live API, database, CSV, JSON).</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <!-- 3. Testing Objectives -->
+            <h3 class="text-2xl font-semibold mt-6 mb-3 text-gray-700 flex items-center space-x-2">
+                <i data-lucide="target" class="w-5 h-5 text-green-600"></i>
+                <span>3. Testing Objectives</span>
+            </h3>
+            <div class="overflow-x-auto rounded-lg border responsive-table">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">Area</th>
+                            <th scope="col" class="px-6 py-3 text-xs font-medium text-gray-500 uppercase tracking-wider">Testing Focus</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">Dashboard Review</td>
+                            <td class="px-6 py-4 text-gray-600">**Go to the Dashboards section.** Review that the populated data makes sense. Ensure all charts, tables, and readiness scores are calculated and displayed correctly.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">Functionality</td>
+                            <td class="px-6 py-4 text-gray-600">Test all filters, sorting options, and interactive elements. Data must update instantly and accurately across all visualizations.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">Usability & UX</td>
+                            <td class="px-6 py-4 text-gray-600">Assess design/layout on **Desktop and Mobile**. Are charts legible? Are navigation links clear and working?</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">Performance</td>
+                            <td class="px-6 py-4 text-gray-600">Note the speed of login, project creation, data import, and dashboard loading.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 4. Feedback and Bug Reporting -->
+            <h3 class="text-2xl font-semibold mt-6 mb-3 text-gray-700 flex items-center space-x-2">
+                <i data-lucide="message-square" class="w-5 h-5 text-green-600"></i>
+                <span>4. Feedback & Bug Reporting</span>
+            </h3>
+            <p class="text-gray-600 mb-3">**All ideas and feedback are welcome!** Please document all issues with the following structure. You can report feedback via the provided Discord link.</p>
+            <ul class="list-disc pl-5 space-y-1 text-sm text-gray-600">
+                <li>**Issue Type:** (Bug, Enhancement Suggestion, Usability Feedback)</li>
+                <li>**Severity:** (Critical, High, Medium, Low)</li>
+                <li>**Description of the Issue:** A clear explanation of what happened.</li>
+                <li>**Steps to Reproduce:** (1) Go to X page. (2) Click Y button. (3) Observe Z error/result.</li>
+                <li>**Browser & OS/Device:** (e.g., Chrome on Windows 10, Safari on iPhone 14)</li>
+            </ul>
+
+        </div>
+
+        <!-- Contributor Invitation Section -->
+        <div class="doc-section bg-yellow-50 border-yellow-500">
+            <h2 class="text-3xl font-bold mb-4 text-gray-800 flex items-center space-x-2">
+                <i data-lucide="heart" class="w-6 h-6 text-yellow-600"></i>
+                <span>Become a Contributor!</span>
+            </h2>
+            <p class="text-gray-700 mb-4">
+                The OA AI Tracker is an open-source project, and we welcome passionate individuals to join the development team. Whether you're interested in coding, documentation, design, or testing, your contribution would make a huge difference.
+            </p>
+            <a href="https://github.com/JasmineART/AO-AI-Tracking.io" target="_blank" class="inline-flex items-center space-x-2 px-6 py-3 bg-yellow-600 text-white font-bold rounded-lg shadow-md hover:bg-yellow-700 transition transform hover:scale-105">
+                <i data-lucide="code" class="w-5 h-5"></i>
+                <span>Explore the Code on GitHub</span>
+            </a>
+            <p class="mt-4 text-sm text-gray-600">Feel free to look through the issues section on GitHub or reach out on our Discord channel to get started!</p>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="header-bg p-6 mt-8">
+        <div class="max-w-4xl mx-auto text-center text-sm text-gray-400">
+            &copy; 2025 OA AI Tracker. Documentation for Beta Testers.
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
+
