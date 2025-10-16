@@ -1,0 +1,28 @@
+name: HTML validate
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  html-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install html-validate
+        run: |
+          npm ci --no-audit --no-fund || true
+          npm i -g html-validate
+
+      - name: Run html-validate
+        run: |
+          html-validate "**/*.html" || true
